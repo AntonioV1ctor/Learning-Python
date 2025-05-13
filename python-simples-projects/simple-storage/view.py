@@ -40,9 +40,8 @@ def user_create(user_txt,pass_txt):
 def store (store_txt):
     product_list = []
     u = open(store_txt)
-    # u.write("{}".format())
     if(verify_if_exist(store_txt)):
-        for i in store_txt:
+        for i in u:
             product_list.append(i)
         return product_list
     else:
